@@ -1,0 +1,28 @@
+# Site settings
+title: BISON AI
+email: contact@bisonai.com
+url: https://www.bisonai.com
+description: "XX"
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary-dark: '#000000'
+  links: '#219ab3'
+
+# Footer settings
+footer: Made with <span id="heart">&#10084;</span> in Gangnam
+
+# Team names, titles and social links
+people:
+- name: Martin Keršner
+  pic: 1
+  position: Founder, CEO
+  social:
+    - title: linkedin
+      url: https://www.linkedin.com/in/martinkersner
+    - title: github
+      url: https://github.com/martinkersner
+
+# Build settings
+markdown: kramdown
+permalink: pretty
