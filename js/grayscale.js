@@ -4,6 +4,12 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+// Keep repeating video
+// Martin Kersner, 2016/08/16
+$('video').on('ended', function () {
+    this.play();
+});
+
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
@@ -175,7 +181,7 @@ function init() {
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
+    var myLatLng = new google.maps.LatLng(37.491742, 127.033629);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,

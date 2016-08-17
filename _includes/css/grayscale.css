@@ -131,6 +131,21 @@ a:focus {
     }
 }
 
+video {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding-top: 70px;
+    text-align: center;
+    color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    display: table-cell;
+    vertical-align: middle;
+}
+
 .intro {
     margin-top: 50px;
     display: table;
