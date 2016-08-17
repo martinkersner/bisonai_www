@@ -144,6 +144,8 @@ video {
     -o-background-size: cover;
     display: table-cell;
     vertical-align: middle;
+    position: relative;
+    z-index: -1;
 }
 
 .intro {
@@ -446,6 +448,7 @@ section#contact .form-group {
 
 section#contact .form-group input,
 section#contact .form-group textarea {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     padding: 10px;
 }
 
@@ -461,6 +464,9 @@ section#contact .form-group textarea.form-control {
 
 section#contact .text-danger {
     color: #e74c3c;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1em;
+    text-align: left;
 }
 
 .btn-xl {
@@ -510,4 +516,22 @@ fieldset[disabled] .btn-xl.active {
 .btn-xl .badge {
     color: rgba(255,255,255,.2);
     background-color: #fff;
+}
+
+#overlay {
+  position: absolute; 
+  z-index: 1;          
+  text-align: center;
+}
+
+#overlay h1 {
+  padding: 0.3em;
+  color: #fff; 
+  background-color: rgba(0,0,0,0.7);
+  text-align: center;
+  margin: 0px;
+}
+
+.pokus {
+  background-color: rgba(0,0,0,0.7);
 }
