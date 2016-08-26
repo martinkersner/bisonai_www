@@ -23,6 +23,10 @@ people:
     - title: github
       url: https://github.com/martinkersner
 
+- name: You
+  pic: 2
+  position: Co-founder
+
 # Build settings
 markdown: kramdown
 permalink: pretty
