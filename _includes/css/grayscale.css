@@ -567,3 +567,8 @@ fieldset[disabled] .btn-xl.active {
   margin-right: 0px;
   margin-bottom: 0.5em;
 }
+
+div.alert {
+  font-family: 'Open Sans';
+}
+
