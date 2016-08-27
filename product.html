@@ -1,6 +1,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 
 <style>
   @font-face {
@@ -12,24 +13,34 @@
          url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');
   }
 
+  body {
+    background-color: #000;
+  }
+
   div#table-container {
-    width: 600px;  
+    width: 420px;
+    padding: 0.5em;
+    background-color: #fff;
+    border: 5px solid #acacac;
+    display: inline-block;
+    vertical-align: middle;
   }
 
   table {
     border-collapse: collapse;
     width: 100%;
+    background-color: #fff;
   }
 
   table tr td {
     padding-top: 0.7em;
     padding-bottom: 0.7em;
     border-bottom: 1px solid #7c7c7c;
-    /*color: #686868;*/
-    color: #616161;
+    color: #000;
     font-family: 'Noto Sans KR';
     font-weight: 500;
     font-size: 0.9em;
+    letter-spacing: 0.01em;
   }
 
   table tr td.param {
@@ -48,35 +59,59 @@
     font-weight: 700;
   }
 
+  #productnotebook {
+    border: 5px solid #acacac;
+  }
+
+  .onerow {
+    float: left;
+  }
+
+  #column-content {
+    display: inline-block;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  span {
+    color: #fff;
+    font-size: 3em;
+    display: inline-block;
+    vertical-align: middle;
+  }
 
 </style>
 </head>
 
 <body>
-<div id="table-container">
-<table>
-  <tr> <td class="param">Model</td>            <td><span id="firstrow">노트북 X1618</span></td> </tr>
 
-  <tr> <td class="param">Processor</td>        <td>인텔 Core <strong>i5-6200U</strong> 프로세서(<strong>3MB</strong> 캐시, 최대 <strong>2.80GHz</strong>)</td> </tr>
+  <div id="column-content">
+    <img src="img/product_notebook.png" id="productnotebook" />
+  
+    <span class="fa fa-long-arrow-right"></span>
+  
+    <div id="table-container">
+    <table>
+      <tr> <td class="param">Model</td>            <td><span id="firstrow">노트북 X1618</span></td> </tr>
+    
+      <tr> <td class="param">Processor</td>        <td>인텔 Core <strong>i5-6200U</strong> 프로세서</td> </tr>
+    
+      <tr> <td class="param">Display</td>          <td>35.6cm(14.0형) <strong>FHD(1920x1080)</strong> IPS 터치식</td> </tr>
+    
+      <tr> <td class="param">Graphics</td>         <td>인텔 HD Graphics 520</td> </tr>
+    
+      <tr> <td class="param">Memory</td>           <td><strong>4GB</strong> LPDDR3 SDRAM 1866MB</td> </tr>
+    
+      <tr> <td class="param">Hard Drive</td>       <td><strong>128GB</strong> 솔리드 스테이트 드라이브, SATA3</td> </tr>
+    
+      <tr> <td class="param">Warranty</td>         <td>1년 센터 내방 (메인보드 2년)</td> </tr>
+    
+      <tr> <td class="param">Battery</td>          <td>4cell 52Wh</td> </tr>
+    </table>
+    </div>
+  </div>
 
-  <tr> <td class="param">Operating System</td> <td>Windows 10 Home 64bit</td> </tr>
-
-  <tr> <td class="param">Display</td>          <td>35.6cm(14.0형) <strong>FHD(1920x1080)</strong> IPS 터치식</td> </tr>
-
-  <tr> <td class="param">Graphics</td>         <td>인텔 HD Graphics 520</td> </tr>
-
-  <tr> <td class="param">Memory</td>           <td><strong>4GB</strong> LPDDR3 SDRAM 1866MB</td> </tr>
-
-  <tr> <td class="param">Hard Drive</td>       <td><strong>128GB</strong> 솔리드 스테이트 드라이브, SATA3</td> </tr>
-
-  <tr> <td class="param">Wireless</td>         <td>인텔 듀얼 밴드 무선 AC(2x2) 8260, Bluetooth 버전 4.1 비vPro</td> </tr>
-
-  <tr> <td class="param">Warranty</td>         <td>1년 센터 내방 (메인보드 2년)</td> </tr>
-
-  <tr> <td class="param">Pointing Device</td>  <td>UltraNav(TrackPoint 및 ClickPad)</td> </tr>
-
-  <tr> <td class="param">Battery</td>          <td>4cell 52Wh</td> </tr>
-</table>
-</div>
 </body>
 </html>
