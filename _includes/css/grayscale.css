@@ -572,3 +572,6 @@ div.alert {
   font-family: 'Open Sans';
 }
 
+i.fa-reply {
+  margin-left: -0.1em;
+}

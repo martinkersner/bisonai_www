@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BISON AI</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="XX">
+    <link rel="canonical" href="https://www.bisonai.com/">
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-83212760-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init("user_sRpgZgl3IJhuDKqlCF01M");
+    })();
+    </script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+        <!-- Intro Header -->
+    <header class="rintro">
+        <div class="intro-body">
+            <div class="container">
+              <!--
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a href="#product" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+                -->
+                <div class="row">
+
+                  <video poster="img/chaos.png" id="bgvid" playsinline autoplay muted> 
+                    <source src="vid/chaos.webm" type="video/webm">
+                    <source src="vid/chaos.mp4" type="video/mp4">
+                  </video>
+
+                  <div id="overlay">
+                    <h1>404</br>This page does not exist!</h1>
+
+                    <a href="http://www.bisonai.com" class="pokus btn btn-circle page-scroll">
+                      <i class="fa fa-reply"></i>
+                    </a>
+                   </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+          <div class="col-md-4">
+            Made with <span id="heart">&#10084;</span> in Gangnam
+          </div>
+
+          <div class="col-md-4">
+          </div>
+
+          <div class="col-md-4">
+            <a href="mailto:contact@bisonai.com">contact@bisonai.com</a>
+          </div>
+        </div>
+    </footer>
+
+     <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+    <script>
+      var $vid = $('video','.row');
+      var $msg = $('#overlay'); 
+      $msg.css({
+        top:$vid.offset().top + (($vid.height()/2) - ($msg.height()/2)),
+        left:$vid.offset().left + (($vid.width()/2) - ($msg.width()/2))
+        });
+    </script>
+
+    </body>
+</html>
