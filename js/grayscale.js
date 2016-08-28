@@ -10,6 +10,22 @@ $('video').on('ended', function () {
     this.play();
 });
 
+// Select all text on page
+// Martin Kersner, 2016/08/28
+function selectElementContents(el) {
+    var range = document.createRange();
+    range.selectNodeContents(el);
+    var sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+}
+
+function selectAllTextOnPage() {
+  //var el = document.getElementById("column-content");
+  var el = document.getElementsByTagName("body")[0];
+  selectElementContents(el);
+}
+
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {

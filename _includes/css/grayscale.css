@@ -552,6 +552,15 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),
+       url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),
+       url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');
+}
+
 #product p {
   margin-left: 1em;
   margin-right: 1em;
@@ -574,4 +583,91 @@ div.alert {
 
 i.fa-reply {
   margin-left: -0.1em;
+}
+
+
+div#table-container {
+  padding: 0.5em;
+  background-color: #fff;
+  border: 5px solid #acacac;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #fff;
+}
+
+table tr td::selection,
+table tr td strong::selection,
+table tr td span::selection {
+  background: red;
+}
+
+table::-moz-selection,
+table tr td strong::selection,
+table tr td span::selection {
+  background: red;
+}
+
+table tr td {
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  border-bottom: 1px solid #7c7c7c;
+  color: #000;
+  font-family: 'Noto Sans KR';
+  font-weight: 500;
+  font-size: 1.1em;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+table tr td.param {
+  width: 25%;
+  font-weight: 700;
+  color: #414141;
+}
+
+table tr td strong {
+  color: #020202;
+  font-weight: 700;
+}
+
+table tr td span#firstrow {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+#productnotebook {
+  border: 5px solid #acacac;
+}
+
+#column-content {
+  display: inline-block;
+}
+
+div.subsection {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+span.arrow {
+  color: #fff;
+  font-size: 3em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+span.subsection-title {
+  color: #fff;
+  display: block;
+  font-family: 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+}
+
+button#select-text-btn {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
 }
