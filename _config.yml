@@ -16,16 +16,21 @@ footer: Made with <span id="heart">&#10084;</span> in Gangnam
 people:
 - name: Martin Keršner
   pic: 1
-  position: Founder, CEO
+  position: Founder
   social:
     - title: linkedin
       url: https://www.linkedin.com/in/martinkersner
     - title: github
       url: https://github.com/martinkersner
 
-- name: You
+- name: Cinyoung Hur
   pic: 2
   position: Co-founder
+  social:
+    - title: linkedin
+      url: https://www.linkedin.com/in/cinyounghur
+    - title: github
+      url: https://github.com/hurcy
 
 # Build settings
 markdown: kramdown
