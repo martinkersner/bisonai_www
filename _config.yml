@@ -32,6 +32,15 @@ people:
     - title: github
       url: https://github.com/hurcy
 
+- name: Saturnino Abril
+  pic: 3
+  position: Co-founder
+  social:
+    - title: linkedin
+      url: https://www.linkedin.com/in/saturnino-abril-166b176b
+    - title: github
+      url: https://github.com/saturninoabril
+
 # Build settings
 markdown: kramdown
 permalink: pretty
