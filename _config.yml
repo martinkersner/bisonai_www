@@ -1,20 +1,24 @@
 # Site settings
-title: BISON AI
+title: Bisonai
 email: contact@bisonai.com
 url: https://www.bisonai.com
-description: "BISON AI - Squeeze the maximum from your data"
+description: "Bisonai - The next generation of artifical intelligence"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary-dark: '#000000'
+  primary-dark: '#fff'
   links: '#219ab3'
 
 # Footer settings
-footer: Made with <span id="heart">&#10084;</span> in Gangnam
+footer: © Bisonai 2018
 
 # Team names, titles and social links
 people:
-- name: Martin Keršner
+- name: Martin Kersner
   pic: 1
   position: Founder
   social:

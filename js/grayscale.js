@@ -6,25 +6,25 @@
 
 // Keep repeating video
 // Martin Kersner, 2016/08/16
-$('video').on('ended', function () {
-    this.play();
-});
+//$('video').on('ended', function () {
+    //this.play();
+//});
 
 // Select all text on page
 // Martin Kersner, 2016/08/28
-function selectElementContents(el) {
-    var range = document.createRange();
-    range.selectNodeContents(el);
-    var sel = window.getSelection();
-    sel.removeAllRanges();
-    sel.addRange(range);
-}
+//function selectElementContents(el) {
+    //var range = document.createRange();
+    //range.selectNodeContents(el);
+    //var sel = window.getSelection();
+    //sel.removeAllRanges();
+    //sel.addRange(range);
+//}
 
-function selectAllTextOnPage() {
+//function selectAllTextOnPage() {
   //var el = document.getElementById("column-content");
-  var el = document.getElementsByTagName("body")[0];
-  selectElementContents(el);
-}
+  //var el = document.getElementsByTagName("body")[0];
+  //selectElementContents(el);
+//}
 
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
@@ -76,7 +76,7 @@ function init() {
         scrollwheel: false,
         draggable: false,
 
-        // How you would like to style the map. 
+        // How you would like to style the map.
         // This is where you would paste any style found on Snazzy Maps.
         styles: [{
             "featureType": "water",
@@ -188,7 +188,7 @@ function init() {
         }]
     };
 
-    // Get the HTML DOM element that will contain your map 
+    // Get the HTML DOM element that will contain your map
     // We are using a div with id="map" seen below in the <body>
     var mapElement = document.getElementById('map');
 
