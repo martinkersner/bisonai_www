@@ -1,7 +1,7 @@
 # Site settings
 title: Bisonai
 email: contact@bisonai.com
-url: https://www.bisonai.com
+url: http://www.bisonai.com
 description: "Bisonai - The next generation of artifical intelligence"
 
 plugins:
@@ -17,15 +17,8 @@ color:
 footer: © Bisonai 2018
 
 # Team names, titles and social links
-people:
-- name: Martin Kersner
-  pic: 1
-  position: Founder
-  social:
-    - title: linkedin
-      url: https://www.linkedin.com/in/martinkersner
-    - title: github
-      url: https://github.com/martinkersner
+team_list:
+  - martin
 
 # Build settings
 markdown: kramdown
