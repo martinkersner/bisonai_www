@@ -1,0 +1,10 @@
+# Team names, titles and social links
+martin:
+  fullname: Martin Kersner
+  pic: 1
+  position: Founder
+  social:
+    - title: linkedin
+      url: https://www.linkedin.com/in/martinkersner
+    - title: github
+      url: https://github.com/martinkersner
