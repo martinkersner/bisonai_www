@@ -674,8 +674,7 @@ div.right-align {
   text-align: right;
 }
 
-
-@media screen and (max-width: 48em){
+@media screen and (max-width: 767px){
   div.left-align {
     text-align: center;
   }
