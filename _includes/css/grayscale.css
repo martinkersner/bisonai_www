@@ -665,3 +665,22 @@ section#main-content p {
   font-size: 1.1em;
   line-height: 1.8em;
 }
+
+div.left-align {
+  text-align: left;
+}
+
+div.right-align {
+  text-align: right;
+}
+
+
+@media screen and (max-width: 48em){
+  div.left-align {
+    text-align: center;
+  }
+
+  div.right-align {
+    text-align: center;
+  }
+}
