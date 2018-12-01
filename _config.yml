@@ -1,7 +1,7 @@
 # Site settings
 title: Bisonai
 email: contact@bisonai.com
-url: bisonai.com
+url: http://www.bisonai.com
 description: "Bisonai - The next generation of artifical intelligence"
 
 plugins:
