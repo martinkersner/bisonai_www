@@ -663,3 +663,8 @@ div.right-align {
     text-align: center;
   }
 }
+
+div.phone-demo {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
