@@ -197,7 +197,7 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0 {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -214,7 +214,7 @@ a:focus {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0 {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -496,15 +496,6 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 100;
-  src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),
-       url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),
-       url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');
-}
-
 #product p {
   margin-left: 1em;
   margin-right: 1em;
@@ -544,26 +535,12 @@ table {
   background-color: #fff;
 }
 
-table tr td::selection,
-table tr td strong::selection,
-table tr td span::selection {
-  background: red;
-}
-
-table::-moz-selection,
-table tr td strong::selection,
-table tr td span::selection {
-  background: red;
-}
-
 table tr td {
   padding-top: 0.7em;
   padding-bottom: 0.7em;
   border-bottom: 1px solid #7c7c7c;
   color: #000;
-  font-family: 'Noto Sans KR';
-  font-weight: 500;
-  font-size: 1.1em;
+  font-size: 1em;
   letter-spacing: 0.01em;
   text-align: left;
 }
@@ -631,9 +608,13 @@ section#main-content h3 {
   margin: 0px;
 }
 
+section#main-content h3.post_title {
+  font-size: 2em;
+}
+
 section#main-content h3.post_title a {
   color: rgba(0,0,0,.87);
-  font-weight: 500;
+  margin-bottom: 0.5em;
 }
 
 section#main-content h3.post_title a:hover {
@@ -666,4 +647,48 @@ div.right-align {
 div.phone-demo {
   padding-top: 1em;
   padding-bottom: 1em;
+}
+
+/* blog post */
+
+section#main-content div#post h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+section#main-content div#post h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+section#main-content div#post h3 {
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+}
+
+section#main-content div#post p {
+  margin-bottom: 1.5em;
+}
+
+/* date name */
+section#main-content div#post span#date,
+section#main-content div#post span#name,
+span.post_date,
+span.post_name {
+  display: block;
+  color: rgba(0,0,0,0.54);
+}
+
+section#main-content div#post span#date, span.post_date {
+  font-size: 1.2em;
+}
+
+section#main-content div#post span#name, span.post_name {
+  margin-bottom: 0.5em;
+  font-size: 1em;
+}
+
+ol li {
+    font-size: 1.1em;
+    line-height: 1.8em;
 }

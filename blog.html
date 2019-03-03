@@ -13,14 +13,10 @@ layout: blog
   <div>
       {% for post in yearMonth.items %}
         {% assign member = site.data.team[post.author] %}
-        {% assign page_date = post.date | date: '%B %d, %Y'  %}
-        <h3 class="post_title" style="padding-bottom: 5px; font-size: 1.7em;"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        <p style="font-size: 1.2em; color: rgba(0,0,0,0.54)">
-        {{ page_date }}
-        </span>
-        <p style="font-size: 1em; color: rgba(0,0,0,0.54)">
-        Posted by {{ member.fullname }}
-        </span>
+        {% assign page_date = post.date | date: '%B %-d, %Y'  %}
+        <h3 class="post_title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <span class="post_date">{{ page_date }}</span>
+        <span class="post_name">Posted by {{ member.fullname }}</span>
         <p>
         {{ post.abstract }}
         <br/><a href="{{ post.url }}">Read more</a>
