@@ -113,9 +113,9 @@ a:focus {
         padding: 10px 0;
         border-bottom: 0;
         letter-spacing: 1px;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
+        /* -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out; */
+        /* -moz-transition: background .5s ease-in-out,padding .5s ease-in-out; */
+        /* transition: background .5s ease-in-out,padding .5s ease-in-out; */
     }
 
     .top-nav-collapse {
@@ -197,7 +197,7 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0 {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -214,7 +214,7 @@ a:focus {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0 {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -663,7 +663,204 @@ div.right-align {
   }
 }
 
+/* POC design */
+div.motto-block {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    justify-content: center;
+}
+
+span#motto-text {
+    font-size: 3.6em;
+    letter-spacing: -0.03em;
+    font-weight: 600;
+
+    vertical-align: middle;
+    display: inline-block;
+    margin: auto;
+}
+
 div.phone-demo {
-  padding-top: 1em;
-  padding-bottom: 1em;
+    text-align: center;
+}
+
+div.motto-block img {
+    height: 420px;
+}
+
+h1.product-middle {
+    color: #000;
+    margin-bottom: 0.4em;
+    margin-top: 0.4em;
+    text-align: center;
+}
+
+/* section.project-container-outer { */
+/*     padding-top: 40px; */
+/*     padding-bottom: 40px; */
+/* } */
+
+section.project-container-outer {
+    margin: 0px;
+    /* padding: 0px; */
+    padding-top: 40px;
+    padding-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+}
+
+div.project-container-inner {
+    text-align: center;
+
+    vertical-align: middle;
+    display: inline-block;
+    margin: auto;
+}
+
+div.container-product-left {
+    margin: 0px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #000;
+    text-align: left;
+}
+
+div.product span.container-text {
+    color: #000;
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 1.5;
+    font-weight: 100;
+
+    display: inline-block;
+    max-width: 300px;
+}
+
+div.product a {
+    display: block;
+    margin-bottom: 1em;
+    font-size: 1.4em;
+}
+
+div.product-h1 {
+    height: 100px;
+    /* line-height: 100px; */
+}
+
+div.container-single-product {
+    margin: 0px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    /* text-align: center; */
+}
+
+div.container-single-product img {
+    width: 400px;
+}
+
+div.container-single-product h1, div.container-product-left h1 {
+    font-size: 4em;
+    font-weight: 900;
+}
+
+a.sns-icon {
+    padding-left: 2em;
+    padding-right: 2em
+}
+
+.special-font {
+    /* font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; */
+    font-size: 3em;
+}
+
+h1.product-middle {
+    /* font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; */
+    font-weight: 800;
+    margin-top: 40px;
+}
+
+section.about-container-outer {
+    background-color: #000;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+}
+
+div.about-container-inner {
+    background-color: #000;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+
+    vertical-align: middle;
+    display: inline-block;
+    margin: auto;
+}
+
+section.about-container-outer span.main-text {
+    color: #fff;
+    font-size: 3.6em;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    display: block;
+}
+
+div.about-container-inner span {
+    font-size: 1.4em;
+    line-height: 1.5em;
+    color: #fff;
+}
+
+span.main-text {
+    text-align: center;
+}
+
+div.container-landing-inner {
+}
+
+hr.light-divider {
+    max-width: 120px;
+    border-width: 0.3em;
+}
+
+section.fit-page {
+    min-height: 100vh;
+}
+
+footer.outer {
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.nav-dark {
+    background-color: #000;
+}
+
+.nav-light {
+    background-color: #fff;
+}
+
+.nav-dark a {
+    color: #fff;
+}
+
+.nav-dark .nav li a:hover,
+.nav-dark .nav li a:focus,
+.nav-dark .nav li a.active {
+    outline: 0;
+    background-color: rgb(8, 8, 8);
 }
