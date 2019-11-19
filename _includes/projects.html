@@ -3,11 +3,11 @@
 
     <div class="col-md-4 product">
       <div class="product-h1">
-        <h1 class="product-middle" id="edge-ml-popup">Edge<br>Machine Learning</h1>
+        <h1 class="product-middle">Edge<br>Machine Learning</h1>
       </div>
-      <a href="" class="icon-chevronright">
+      <span id="edge-ml-popup" class="fake-link">
         Learn more <i class="fa fa-angle-right" aria-hidden="true"></i>
-      </a>
+      </span>
       <span class="container-text">
         Our technology helps you to design and optimize your machine learning models for edge and mobile devices.
       </span>
@@ -16,11 +16,11 @@
 
     <div class="col-md-4 product">
       <div class="product-h1">
-        <h1 class="product-middle" id="fl-popup">Federated<br>Learning</h1>
+        <h1 class="product-middle">Federated<br>Learning</h1>
       </div>
-      <a href="" class="icon-chevronright">
+      <span id="fl-popup" class="fake-link">
         Try out!
-      </a>
+      </span>
       <span class="container-text">
         Train your machine learning models across thousands of decentralized edge devices using valuable local data samples.
       </span>
@@ -28,11 +28,11 @@
 
     <div class="col-md-4 product">
       <div class="product-h1">
-        <h1 class="product-middle" id="data-privacy-popup">Data<br> Privacy</h1>
+        <h1 class="product-middle">Data<br> Privacy</h1>
       </div>
-      <a href="" class="icon-chevronright">
-        Learn more <i class="fa fa-angle-right" aria-hidden="true"></i>
-      </a>
+        <span id="data-privacy-popup" class="fake-link">
+          Learn more <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </span>
       <span class="container-text">
         Protect personal data and privacy of users without sacrificing the quality of your optimized machine learning models.
       </span>
@@ -40,4 +40,9 @@
 
 
   </div>
+  <script type="text/javascript">
+    document.getElementById("fl-popup").onclick = function() {showSignup()};
+    document.getElementById("data-privacy-popup").onclick = function() {showSignup()};
+    document.getElementById("edge-ml-popup").onclick = function() {showSignup()};
+  </script>
 </section>
