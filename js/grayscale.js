@@ -18,7 +18,7 @@ $("a").mouseup(function(){
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     var about_position = $("#about").offset().top - 20;
-    var projects_position = $("#projects").offset().top;
+    var projects_position = $("#projects").offset().top - 20;
 
     if (scroll > about_position && scroll < projects_position) {
         $(".navbar").addClass("nav-dark");
