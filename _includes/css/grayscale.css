@@ -618,7 +618,9 @@ button#select-text-btn {
 
 img#logo {
   padding-left: 15px;
-  height: 50px;
+  height: 56px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 section#team, section#contact, section#service, section#main-content {
