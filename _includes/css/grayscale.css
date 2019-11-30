@@ -627,10 +627,16 @@ section#team, section#contact, section#service, section#main-content {
   padding-top: 80px;
   padding-right: 30px;
   padding-left: 30px;
+  padding-bottom: 30px;
 }
 
 section#main-content h3 {
   margin: 0px;
+}
+
+section#main-content h3.post_title {
+  font-size: 2em;
+  margin-bottom: 0.5em;
 }
 
 section#main-content h3.post_title a {
@@ -640,6 +646,52 @@ section#main-content h3.post_title a {
 
 section#main-content h3.post_title a:hover {
   color: rgb(39, 182, 211);
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -90px;
+    visibility: hidden;
+}
+
+/* blog post */
+
+section#main-content div#post h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+section#main-content div#post h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+section#main-content div#post h3 {
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+}
+
+section#main-content div#post p {
+  margin-bottom: 1.5em;
+}
+
+/* date name */
+section#main-content div#post span#date,
+section#main-content div#post span#name,
+span.post_date,
+span.post_name {
+  display: block;
+  color: rgba(0,0,0,0.54);
+}
+
+section#main-content div#post span#date, span.post_date {
+  font-size: 1.2em;
+}
+
+section#main-content div#post span#name, span.post_name {
+  margin-bottom: 0.5em;
+  font-size: 1em;
 }
 
 section#main-content p {
